@@ -15,7 +15,7 @@ while true; do
 	TMP=`hcitool rssi $BTADDR 2>&1`
 	if [ "$TMP" == "Not connected." ]; then
 		echo "reconnecting..."
-		hcitool cc $BTADDR
+		sudo hcitool cc $BTADDR
 	fi
 	TMP=`(hcitool rssi $BTADDR || echo x x x -30 ) 2>/dev/null | awk '{print $4;}'`
 	RSSI=("${RSSI[@]:1}" $TMP)
