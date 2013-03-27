@@ -17,7 +17,7 @@ There are, however few problems with DetectPhone:
 RSSI
 ====
 [RSSI](http://en.wikipedia.org/wiki/RSSI) stands for received signal strength
-indicator, and in case is Bluetooth devide is more or less proporional to the
+indicator, and in case of Bluetooth device is more or less proporional to the
 distance between devices. This is something useful for BTscreenlock, as we can
 use this to flexibly configure radius to which cellphone need to be removed
 from PC for PC to lock itself.
