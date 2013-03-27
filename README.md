@@ -32,3 +32,4 @@ managers;
 security (no auto unlock);
 - LOCKTHRESHOLD - adjust to desirable lock distance
 - UNLOCKTHRESHOLD - ditto for unlock distance
+- DEBUG - set to "1" to make BTscreenlock extra verbose

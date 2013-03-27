@@ -7,6 +7,7 @@ LOCKCMD="gnome-screensaver-command --activate"
 UNLOCKCMD="gnome-screensaver-command --deactivate"
 LOCKTHRESHOLD=-40
 UNLOCKTHRESHOLD=-10
+DEBUG=
 
 RSSI=(0 0 0 0 $UNLOCKTHRESHOLD)
 LOCKED=0
@@ -28,6 +29,8 @@ while true; do
 		LOCKED=1
 		$LOCKCMD
 	fi
-	echo "$LOCKED: $AVG -> ${RSSI[@]}"
+	if [ $DEBUG ]; then
+		echo "$LOCKED: $AVG -> ${RSSI[@]}"
+	fi
 	usleep 300000;
 done
